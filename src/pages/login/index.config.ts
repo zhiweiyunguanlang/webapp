@@ -1,4 +1,4 @@
 export default {
-  navigationBarTitleText: 'Taro-hooks',
+  navigationBarTitleText: '登陆',
   enableShareAppMessage: true,
-};
+}

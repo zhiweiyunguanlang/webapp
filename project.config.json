@@ -2,7 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "myapp-react",
   "description": "",
-  "appid": "touristappid",
+  "appid": "wxde8fb2a16d4bbdf9",
   "setting": {
     "urlCheck": true,
     "es6": false,
@@ -16,10 +16,25 @@
     "coverView": true,
     "showShadowRootInWxmlPanel": false,
     "scopeDataCheck": false,
-    "useCompilerModule": false
+    "useCompilerModule": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
   "compileType": "miniprogram",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "condition": {}
+  "condition": {},
+  "libVersion": "2.29.1",
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

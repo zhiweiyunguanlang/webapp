@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "nutui-iconfont"; /* Project id 3860737 */
+  src: url('iconfont.woff2?t=1673451401534') format('woff2'),
+       url('iconfont.woff?t=1673451401534') format('woff'),
+       url('iconfont.ttf?t=1673451401534') format('truetype');
+}
+
+.nutui-iconfont {
+  font-family: "nutui-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nut-icon-mima:before {
+  content: "\e8b2";
+}
+
+.nut-icon-quanbu:before {
+  content: "\e61e";
+}
+
+.nut-icon-seach:before {
+  content: "\e61f";
+}
+
+.nut-icon-share:before {
+  content: "\e620";
+}
+
+.nut-icon-shang:before {
+  content: "\e621";
+}
+
+.nut-icon-right:before {
+  content: "\e622";
+}
+
+.nut-icon-Down:before {
+  content: "\e623";
+}
+
+.nut-icon-up:before {
+  content: "\e624";
+}
+
+.nut-icon-left:before {
+  content: "\e625";
+}
+
+.nut-icon-zhankai:before {
+  content: "\e626";
+}
+
+.nut-icon-saoma:before {
+  content: "\e627";
+}
+
+.nut-icon-yuedu:before {
+  content: "\e628";
+}
+
+.nut-icon-xiaoxi-1:before {
+  content: "\e629";
+}
+
+.nut-icon-bianji:before {
+  content: "\e62a";
+}
+
+.nut-icon-a-3d:before {
+  content: "\e62b";
+}
+
+.nut-icon-guanbi2:before {
+  content: "\e62c";
+}
+
+.nut-icon-cu:before {
+  content: "\e62d";
+}
+
+.nut-icon-jian:before {
+  content: "\e62e";
+}
+
+.nut-icon-canyin:before {
+  content: "\e62f";
+}
+
+.nut-icon-erweima:before {
+  content: "\e630";
+}
+
+.nut-icon-shanchu:before {
+  content: "\e631";
+}
+
+.nut-icon-pinglun:before {
+  content: "\e632";
+}
+
+.nut-icon-dianti:before {
+  content: "\e633";
+}
+
+.nut-icon-zhanlan:before {
+  content: "\e634";
+}
+
+.nut-icon-add:before {
+  content: "\e635";
+}
+
+.nut-icon-all:before {
+  content: "\e636";
+}
+
+.nut-icon-zhanpin:before {
+  content: "\e637";
+}
+
+.nut-icon-wenchuang:before {
+  content: "\e638";
+}
+
+.nut-icon-zhiti:before {
+  content: "\e639";
+}
+
+.nut-icon-qiantai:before {
+  content: "\e63a";
+}
+
+.nut-icon-baoguo:before {
+  content: "\e63b";
+}
+
+.nut-icon-cangpin:before {
+  content: "\e63c";
+}
+
+.nut-icon-chongzhi:before {
+  content: "\e63d";
+}
+
+.nut-icon-chakan:before {
+  content: "\e63e";
+}
+
+.nut-icon-coupon:before {
+  content: "\e63f";
+}
+
+.nut-icon-copy:before {
+  content: "\e640";
+}
+
+.nut-icon-customer-1:before {
+  content: "\e641";
+}
+
+.nut-icon-customer:before {
+  content: "\e642";
+}
+
+.nut-icon-date:before {
+  content: "\e643";
+}
+
+.nut-icon-cart:before {
+  content: "\e644";
+}
+
+.nut-icon-emoji:before {
+  content: "\e645";
+}
+
+.nut-icon-download:before {
+  content: "\e646";
+}
+
+.nut-icon-goui:before {
+  content: "\e647";
+}
+
+.nut-icon-goods:before {
+  content: "\e648";
+}
+
+.nut-icon-guanbitu:before {
+  content: "\e649";
+}
+
+.nut-icon-jy:before {
+  content: "\e64a";
+}
+
+.nut-icon-jyjl:before {
+  content: "\e64b";
+}
+
+.nut-icon-keyboard:before {
+  content: "\e64c";
+}
+
+.nut-icon-live:before {
+  content: "\e64d";
+}
+
+.nut-icon-khgx:before {
+  content: "\e64e";
+}
+
+.nut-icon-a-menuclose:before {
+  content: "\e64f";
+}
+
+.nut-icon-menu:before {
+  content: "\e650";
+}
+
+.nut-icon-lianxiren:before {
+  content: "\e651";
+}
+
+.nut-icon-mob:before {
+  content: "\e652";
+}
+
+.nut-icon-more:before {
+  content: "\e653";
+}
+
+.nut-icon-paperwork:before {
+  content: "\e654";
+}
+
+.nut-icon-plus:before {
+  content: "\e655";
+}
+
+.nut-icon-ship:before {
+  content: "\e656";
+}
+
+.nut-icon-shop:before {
+  content: "\e657";
+}
+
+.nut-icon-seller:before {
+  content: "\e658";
+}
+
+.nut-icon-shou:before {
+  content: "\e659";
+}
+
+.nut-icon-tuozhan:before {
+  content: "\e65a";
+}
+
+.nut-icon-verified:before {
+  content: "\e65b";
+}
+
+.nut-icon-wenti:before {
+  content: "\e65c";
+}
+
+.nut-icon-time:before {
+  content: "\e65d";
+}
+
+.nut-icon-xiao:before {
+  content: "\e65e";
+}
+
+.nut-icon-yaoqing:before {
+  content: "\e65f";
+}
+
+.nut-icon-zan:before {
+  content: "\e660";
+}
+
+.nut-icon-zhuaban:before {
+  content: "\e661";
+}
+
+.nut-icon-ziti:before {
+  content: "\e662";
+}
+
+.nut-icon-yinshui:before {
+  content: "\e663";
+}
+
+.nut-icon-zhan2:before {
+  content: "\e664";
+}
+
+.nut-icon-tgdp-copy:before {
+  content: "\e665";
+}
+
