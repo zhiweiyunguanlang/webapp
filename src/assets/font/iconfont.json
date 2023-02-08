@@ -1,10 +1,31 @@
 {
   "id": "3860737",
   "name": "小程序Icon",
-  "font_family": "nutui-iconfont",
-  "css_prefix_text": "nut-icon-",
+  "font_family": "van-icon",
+  "css_prefix_text": "van-icon-",
   "description": "",
   "glyphs": [
+    {
+      "icon_id": "517496",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "4765896",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e78f",
+      "unicode_decimal": 59279
+    },
+    {
+      "icon_id": "8092167",
+      "name": "eye-close",
+      "font_class": "eye-close",
+      "unicode": "e8ff",
+      "unicode_decimal": 59647
+    },
     {
       "icon_id": "11372676",
       "name": "密码",

@@ -45,10 +45,10 @@ declare namespace HTTP {
   }
 
   // 自定义参数
-  interface CustomOptions {
+  interface CustomOptions<T> {
     showError?: boolean // 是否显示错误信息
     mock?: boolean // 是否走mock数据
-    isNeedResponse?: boolean // 是否需要完整响应
+    isNeedResponse?: T // 是否需要完整响应
   }
 
   interface ErrObj {

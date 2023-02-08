@@ -59,14 +59,23 @@ Taro.addInterceptor(requestInterceptors)
 Taro.addInterceptor(Taro.interceptors.logInterceptor)
 Taro.addInterceptor(Taro.interceptors.timeoutInterceptor)
 
-interface argus {
+interface customRequestArgus<T> {
+  url: string
+  method?: keyof Taro.request.Method
   params?: Record<string, any>
-  customOptions?: HTTP.CustomOptions
+  customOptions?: HTTP.CustomOptions<T>
   options?: Taro.request.Option
 }
 
+interface argus<T> {
+  params?: Record<string, any>
+  customOptions?: HTTP.CustomOptions<T>
+  options?: Taro.request.Option
+}
 interface HTTPApiObj {
-  (argus: argus): Promise<HTTP.ResponseData | HTTP.Response>
+  (argus: argus<false>): Promise<HTTP.ResponseData>
+  (argus: argus<true>): Promise<HTTP.Response>
+  (argus: argus<false | true>): Promise<HTTP.ResponseData | HTTP.Response>
 }
 
 interface A {
@@ -77,32 +86,35 @@ interface A {
 // 亦或者可以放在`Object`中作为动态的`key`存在type infoJson = Record<keyof ReturnType<typeof func>, string>
 const HTTP: A = {}
 
+async function customRequest({ url, method, params, customOptions, options }: customRequestArgus<true>)
+async function customRequest({ url, method, params, customOptions, options }: customRequestArgus<false>)
+async function customRequest({ url, method, params, customOptions, options }: customRequestArgus<false | true>) {
+  // 初始化customOptions
+  customOptions = Object.assign({ showError: true, mock: false, isNeedResponse: false }, customOptions)
+  const response: HTTP.Response = await HttpRequest({ url, method, data: params || {}, ...(options || {}) })
+  const {
+    data: { code, msg },
+  } = response
+  // 权限判定
+  if (code == 401) {
+    Taro.showToast({
+      title: '请登录',
+      icon: 'loading',
+      duration: 1500,
+      mask: true,
+    }).then(() => Taro.navigateTo({ url: '/pages/login/index' }))
+  }
+  // 是否显示错误
+  if (customOptions.showError && code !== 0) {
+    Taro.showToast({ title: msg, icon: 'none', mask: true })
+  }
+  // 是否需要完整response
+  return !customOptions.isNeedResponse ? response.data : response
+}
+
 for (let apiName in apiNames) {
   const { url, method } = apiNames[apiName] as HTTP.ApiObject
-  HTTP[apiName] = async function ({ params, customOptions, options }: argus) {
-    // 初始化customOptions
-    customOptions = Object.assign({ showError: true, mock: false, isNeedResponse: false }, customOptions)
-    const response: HTTP.Response = await HttpRequest({ url, method, data: params || {}, ...(options || {}) })
-
-    const {
-      data: { code, msg },
-    } = response
-    // 权限判定
-    if (code == 401) {
-      Taro.showToast({
-        title: '请登录',
-        icon: 'loading',
-        duration: 1500,
-        mask: true,
-      }).then(() => Taro.navigateTo({ url: '/pages/login/index' }))
-    }
-    // 是否显示错误
-    if (customOptions.showError && code !== 0) {
-      Taro.showToast({ title: msg, icon: 'none', mask: true })
-    }
-    // 是否需要完整response
-    return !customOptions.isNeedResponse ? response.data : response
-  }
+  HTTP[apiName] = ({ params, customOptions, options }) => customRequest({ url, method, params, customOptions, options })
 }
 
 export default HTTP

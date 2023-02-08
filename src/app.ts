@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import '@/assets/font/iconfont.css'
-import './app.scss'
-class App extends Component<PropsWithChildren> {
+import './app.less'
+class App extends Component {
   componentDidMount() {}
 
   componentDidShow() {}

@@ -1,10 +1,11 @@
 export default {
   pages: [
+    'pages/login/index',
+    'pages/register/index',
     'pages/pipeGallery/index',
     'pages/upcoming/index',
     'pages/material/index',
     'pages/my/index',
-    'pages/login/index',
   ],
   window: {
     backgroundTextStyle: 'light',

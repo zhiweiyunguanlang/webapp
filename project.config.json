@@ -1,22 +1,13 @@
 {
-  "miniprogramRoot": "dist/",
-  "projectname": "myapp-react",
+  "miniprogramRoot": "",
+  "projectname": "pure-project-vantui",
   "description": "",
-  "appid": "wxde8fb2a16d4bbdf9",
   "setting": {
     "urlCheck": true,
     "es6": false,
-    "enhance": false,
-    "compileHotReLoad": false,
     "postcss": false,
-    "preloadBackgroundData": false,
     "minified": false,
-    "newFeature": true,
-    "autoAudits": false,
-    "coverView": true,
-    "showShadowRootInWxmlPanel": false,
-    "scopeDataCheck": false,
-    "useCompilerModule": false,
+    "enhance": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -24,15 +15,13 @@
     }
   },
   "compileType": "miniprogram",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "condition": {},
+  "appid": "wxde8fb2a16d4bbdf9",
   "libVersion": "2.29.1",
-  "srcMiniprogramRoot": "dist/",
   "packOptions": {
     "ignore": [],
     "include": []
   },
+  "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
